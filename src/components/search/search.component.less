@@ -1,0 +1,31 @@
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+
+    .icon{
+        position: absolute;
+        left: 7px;
+        top: 24%;
+        color: #aaa;
+        font-size: 23px;
+    }
+
+    .search-bar {
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 1px 3px 20px 0px;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        width: 100%;
+        border-radius: 2px;
+        padding-left: 39px;
+
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+}

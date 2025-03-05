@@ -1,0 +1,22 @@
+.items-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+
+        .col {
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}  
+  

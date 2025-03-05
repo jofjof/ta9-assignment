@@ -1,0 +1,9 @@
+<div class="app-container">
+    <div class="icon-container child">
+        <mat-icon (click)="openAddItemDialog()" class="icon">add_circle</mat-icon>
+        <mat-icon (click)="toggleView()" class="icon" [class.active]="isListView()">view_list</mat-icon>
+        <mat-icon (click)="toggleView()" class="icon" [class.active]="!isListView()">view_module</mat-icon>
+    </div>
+    <app-search class="child"></app-search>
+    <app-list class="child" [isListView]="isListView"></app-list>
+</div>

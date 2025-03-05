@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "item1",
+    "color": "#575994",
+    "createDate": "2024-03-01T12:00:00Z",
+    "lastUpdate": "2024-03-02T12:00:00Z",
+    "createdBy": "Ofir"
+  },
+  {
+    "id": "2",
+    "name": "item2",
+    "color": "rgb(168 178 31)",
+    "createDate": "2024-03-01T13:00:00Z",
+    "lastUpdate": "2024-03-02T13:00:00Z",
+    "createdBy": "Ofir"
+  },
+  {
+    "id": "3",
+    "name": "item3",
+    "color": "#FF5733",
+    "createDate": "2024-03-03T14:00:00Z",
+    "lastUpdate": "2024-03-04T14:00:00Z",
+    "createdBy": "Sarah"
+  },
+  {
+    "id": "4",
+    "name": "lammaaaa",
+    "color": "#C70039",
+    "createDate": "2024-03-03T15:00:00Z",
+    "lastUpdate": "2024-03-04T15:00:00Z",
+    "createdBy": "Sarah"
+  },
+  {
+    "id": "5",
+    "name": "catsy cats",
+    "color": "rgb(34, 193, 195)",
+    "createDate": "2024-03-04T16:00:00Z",
+    "lastUpdate": "2024-03-05T16:00:00Z",
+    "createdBy": "Liam"
+  },
+  {
+    "id": "6",
+    "name": "and that thing",
+    "color": "#8E44AD",
+    "createDate": "2024-03-05T17:00:00Z",
+    "lastUpdate": "2024-03-06T17:00:00Z",
+    "createdBy": "Liam"
+  },
+  {
+    "id": "7",
+    "name": "this thing",
+    "color": "#1F618D",
+    "createDate": "2024-03-06T18:00:00Z",
+    "lastUpdate": "2024-03-07T18:00:00Z",
+    "createdBy": "Emma"
+  }
+]

@@ -1,0 +1,24 @@
+<form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+    <div class="form-title">
+        <span class="name">Item Name</span>
+        <input id="name" formControlName="name" />
+    </div>
+    <div class="invalid" *ngIf="itemForm.get('name')?.invalid && itemForm.get('name')?.touched">
+        Name is required.
+    </div>
+    <div class="form-title">
+        <span class="name">Color</span>
+        <input type="color" id="color" formControlName="color" />
+    </div>
+
+    <div class="form-title">
+        <span class="name">Created By</span>
+        <input id="createdBy" formControlName="createdBy" />
+    </div>
+    <div class="invalid" *ngIf="itemForm.get('createdBy')?.invalid && itemForm.get('createdBy')?.touched">
+        Created By is required.
+    </div>
+
+    <div *ngIf="submittedInvalid">Item is Invalid</div>
+    <button type="submit" [disabled]="itemForm.invalid">Submit</button>
+</form>

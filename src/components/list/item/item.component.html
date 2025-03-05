@@ -1,0 +1,19 @@
+<div (click)="openEditItemDialog()" [ngClass]="isListView()? 'item-list': 'item-grid'">
+    <div class="titles" *ngIf="!isListView()">
+        <span class="col title">Color</span>
+        <span class="col name title">Name</span>
+        <span class="col title">Create Date</span>
+        <span class="col title">Last Update</span>
+        <span class="col title">Created By</span>
+    </div>
+
+    <div class="titles ">
+        <div class="col">
+            <div [style.background-color]="item.color" class="color-display"></div>
+        </div>
+        <span class="col name">{{ item.name }}</span>
+        <span class="col">{{ item.createDate | date: 'd/M/yyyy'}}</span>
+        <span class="col">{{ item.lastUpdate | date: 'd/M/yyyy'}}</span>
+        <span class="col">{{ item.createdBy }}</span>
+    </div>
+</div>

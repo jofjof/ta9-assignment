@@ -1,0 +1,11 @@
+<div [ngClass]="isListView()? 'items-list': 'items-grid'">
+    <div class="columns" *ngIf="isListView()">
+        <span class="col">Color</span>
+        <span class="col name">Name</span>
+        <span class="col">Create Date</span>
+        <span class="col">Last Update</span>
+        <span class="col">Created By</span>
+    </div>
+
+    <app-item *ngFor="let item of itemsList()" [item]="item" [isListView]="isListView"></app-item>
+</div>

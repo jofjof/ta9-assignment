@@ -1,0 +1,42 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  row-gap: 10px;
+
+  .form-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      color: #a5a4a3;
+    }
+
+    input {
+      padding: 3px;
+      width: 62%;
+      border: solid 1px #a5a4a3;
+      border-radius: 3px; 
+    }
+  }
+
+  .invalid {
+    color: red;
+    font-size: 12px;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #74b5fc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
