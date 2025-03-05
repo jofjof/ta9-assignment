@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { debounceTime, Subject } from 'rxjs';
 import { ItemsService } from '../../services/items/items.service';
 import { MatIcon } from '@angular/material/icon';
-  
+
 @Component({
   selector: 'app-search',
   imports: [MatIcon],
   templateUrl: './search.component.html',
-  styleUrl: './search.component.less'
+  styleUrl: './search.component.less',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchComponent {
   searchValue = new Subject<string>();
@@ -16,7 +17,7 @@ export class SearchComponent {
     this.searchValue
       .pipe(debounceTime(200))
       .subscribe((searchValue: string) => {
-       this.itemsService.filterItems(searchValue);
+        this.itemsService.filterItems(searchValue);
       });
   }
 

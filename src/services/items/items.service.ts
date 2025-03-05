@@ -33,15 +33,14 @@ export class ItemsService {
   }
 
   addItem(item: Item): void {
-    console.log(item)
     this.itemsSubject.next([...this.itemsSubject.value, item]);
-    console.log(this.itemsSubject.value)
+    this.allItems.push(item);
   }
 
   editItem(item: Item): void {
-    console.log(item)
     this.itemsSubject.next(
       this.itemsSubject.value.map((i) => (i.id === item.id ? item : i)));
+      this.allItems.map((i) => (i.id === item.id ? item : i));
   }
 
   filterItems(searchTerm: string): void {
